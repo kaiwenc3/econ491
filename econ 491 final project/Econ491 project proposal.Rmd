@@ -1,0 +1,30 @@
+---
+title: "econ491 proposal"
+output: html_document
+date: "2024-03-24"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Project Proposal: Economic Impact Analysis Using Machine Learning Techniques
+
+Project Overview:
+The objective of this project is to analyze the economic impact of certain key factors on a country's GDP growth over time. We will use these provided dataset, which includes data from various countries over multiple years in order to examine how the variables such as population, investment rates, and other economic indicators will affect the GDP of these different countries.
+
+Research Question:
+The main research question is: "How do key economic factors affect the GDP growth of different countries over time, and can machine learning models provide accurate predictions and insights into these relationships?" Also, 1. Research on economic growth trends.How have specific countries' economies grown over time, and what major factors contribute to that growth? Investigate the relationship between GDP growth and factors like investment rates, population growth, and technological advancements. 2. How do changes in population size and structure affect a country's economic performance? This involves looking at the impact of aging populations or youth bulges on economic growth, investment, and consumption patterns. 3. Using GDP per capita and other available economic indicators, examine trends in income inequality within countries. What economic policies or events correlate with changes in inequality? 4. Analyze the impact of global events (e.g., world wars, oil crises, financial crises, pandemic) on the economic indicators of different countries. How do such events influence GDP, investment rates, and other key economic metrics?
+
+#Data Description:
+We will use the dataset which is made by Oscar Jorda, Moritz Schularick, Alan M. Taylor from the macrohistory website. This dataset brings together macroeconomic data that previously had been dispersed across a variety of sources into one place. And these macroeconomic data which includes a bunch of important economic predictors, such as Year, Country, Population, Real GDP measures, Investment rates, now covers 18 advanced economies since 1870 on an annual basis. There are 59 variables in total, indicating a rich set of variables for analysis. Almost all of them is numerical variables except the name of country. The dataset spans from the year 1870 onwards, providing a substantial historical perspective.
+
+#Methodology:
+We propose to multivariate linear regression which is including non-regularization linear regression, and regularization regression, such as lasso regression and the ridge regression. This will help us find the most suitable coeffients for each predictors because of the different flexibility of the regression model. And also we will Principal Component Analysis (PCA) which can help us to reduce dimensionality while preserving as much of the data's variation as possible in the field of data analysis and machine learning. It's particularly useful when dealing with high-dimensional data. Furthermore, we aim to use K-means clustering to group countries or periods into clusters based on similarities in economic indicators or to reduce the dimensionality of the data for analysis. Then, we will use some visualization methods such as summary statistics, histograms, scatter plots, time series plots to figure it out the relationship between these predictors and find if they have an issue with multilinearity. Finally, we will try to use fixed effects, random effects, dynamic panel data models to dentify relationships between variables and test hypotheses about these relationships.
+
+# Reference
+Òscar Jordà, Moritz Schularick, and Alan M. Taylor. 2017. “Macrofinancial History and the New Business Cycle Facts.” in NBER Macroeconomics Annual 2016, volume 31, edited by Martin Eichenbaum and Jonathan A. Parker. Chicago: University of Chicago Press.
+
+
+
+
